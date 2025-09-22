@@ -1,0 +1,60 @@
+# Arquivo auxiliar (removível se não for mais usado)
+HELP.md
+
+# ============================
+# BACKEND - SPRING BOOT (Java)
+# ============================
+
+# Diretórios de build e Maven
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# (DESNECESSÁRIOS AGORA) Exceções que podem ser removidas se não usar múltiplos módulos
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# STS / Eclipse
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+
+# IntelliJ IDEA
+backend/.idea
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+backend/nbproject/private/
+backend/nbbuild/
+backend/dist/
+backend/nbdist/
+backend/.nb-gradle/
+backend/build/
+
+# (DESNECESSÁRIOS AGORA) Exceções que podem ser removidas
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Arquivo de variáveis de ambiente do backend
+backend/.env
+
+# ============================
+# FRONTEND - REACT + VITE
+# ============================
+
+# Diretórios de build e dependências
+/frontend/node_modules/
+/frontend/dist/
+
+/frontend/.vscode/
+
+# Arquivo de variáveis de ambiente global (caso use)
+/.env
+
+# VS Code na raiz do projeto
+.vscode/
