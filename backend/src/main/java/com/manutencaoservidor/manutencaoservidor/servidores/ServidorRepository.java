@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ServidorRepository extends JpaRepository <ServidorEntity, Long>{
+    boolean existsByNomeServidor(String nomeServidor);
 }
