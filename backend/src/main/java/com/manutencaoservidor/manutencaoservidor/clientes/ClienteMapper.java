@@ -1,9 +1,7 @@
 package com.manutencaoservidor.manutencaoservidor.clientes;
 
 import com.manutencaoservidor.manutencaoservidor.servidores.ServidorEntity;
-import org.springframework.stereotype.Component;
 
-@Component
 public class ClienteMapper {
     public static ClienteEntity toEntity(ClienteRequestDTO dto, ServidorEntity servidor) {
         return ClienteEntity.builder()
