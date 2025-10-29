@@ -1,5 +1,6 @@
 package com.manutencaoservidor.manutencaoservidor.servidores;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,7 +15,7 @@ public class ServidorController {
     private final ServidorService servidorService;
 
     @PostMapping
-    public ResponseEntity<ServidorResponseDTO> criarServidor(@RequestBody ServidorRequestDTO dto) {
+    public ResponseEntity<ServidorResponseDTO> criarServidor(@Valid @RequestBody ServidorRequestDTO dto) {
         return ResponseEntity.ok(servidorService.criarServidor(dto));
     }
 
