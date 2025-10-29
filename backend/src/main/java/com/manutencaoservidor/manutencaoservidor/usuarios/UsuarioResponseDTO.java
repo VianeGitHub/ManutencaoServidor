@@ -13,5 +13,4 @@ public class UsuarioResponseDTO {
 
     private Long id;
     private String loginUsuario;
-    private String senhaUsuario;
 }

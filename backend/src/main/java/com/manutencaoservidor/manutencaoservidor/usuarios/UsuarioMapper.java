@@ -13,7 +13,6 @@ public class UsuarioMapper {
         return UsuarioResponseDTO.builder()
                 .id(entity.getId())
                 .loginUsuario(entity.getLoginUsuario())
-                .senhaUsuario(entity.getSenhaUsuario())
                 .build();
     }
 }
